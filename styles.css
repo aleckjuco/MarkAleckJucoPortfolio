@@ -115,6 +115,83 @@ body.dark-mode .social-links a:hover {
   transform: scale(1.05);
   background-color: #ddd;
 }
+/* General mobile reset */
+body {
+  padding: 1rem;
+  font-size: 16px;
+}
+
+/* Stack layout sections */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .intro-section,
+  .about-section,
+  .skills-section,
+  .contact-section {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .profile-section {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border: 6px solid white;
+    margin: 0 auto;
+  }
+
+  .project-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-preview article {
+    width: 90%;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.25rem 0.5rem;
+  }
+
+  .contact-section {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .contact-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .highlight {
+    margin: 1rem 0;
+    padding: 1.5rem 1rem;
+  }
+}
 
 html {
   scroll-behavior: smooth;
